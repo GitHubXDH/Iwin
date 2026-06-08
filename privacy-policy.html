@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Win Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff;
+      --text: #1f2026;
+      --muted: #686b76;
+      --line: #e8e8ee;
+      --soft: #f6f6f9;
+      --gold: #b99b36;
+      --gold-soft: #fbf7e8;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+
+    header {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, #fff 0%, var(--soft) 100%);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+
+    .meta {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .language-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0 0;
+    }
+
+    .language-switcher button {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--text);
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .language-switcher button[aria-pressed="true"] {
+      border-color: var(--gold);
+      background: var(--gold-soft);
+      color: #8b711d;
+    }
+
+    main {
+      margin-top: 28px;
+    }
+
+    .policy {
+      display: none;
+    }
+
+    .policy.active {
+      display: block;
+    }
+
+    section {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 17px;
+      line-height: 1.4;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 0;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+
+    th,
+    td {
+      vertical-align: top;
+      text-align: left;
+      padding: 12px;
+      border: 1px solid var(--line);
+    }
+
+    th {
+      background: var(--soft);
+      font-weight: 700;
+    }
+
+    a {
+      color: #8a6c12;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 28px;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 24px, 920px);
+        padding-top: 24px;
+      }
+
+      header {
+        padding: 22px;
+      }
+
+      table,
+      thead,
+      tbody,
+      tr,
+      th,
+      td {
+        display: block;
+      }
+
+      tr {
+        border: 1px solid var(--line);
+        border-bottom: 0;
+      }
+
+      th,
+      td {
+        border: 0;
+        border-bottom: 1px solid var(--line);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="eyebrow" data-i18n="eyebrow">Privacy Policy</p>
+      <h1 data-i18n="title">I Win Privacy Policy</h1>
+      <p class="meta" data-i18n="meta">Effective date: June 8, 2026 · Last updated: June 8, 2026</p>
+      <div class="language-switcher" aria-label="Language">
+        <button type="button" data-lang-button="zh-Hans">简体中文</button>
+        <button type="button" data-lang-button="zh-Hant">繁體中文</button>
+        <button type="button" data-lang-button="en">English</button>
+      </div>
+    </header>
+
+    <main>
+      <article class="policy" data-lang="zh-Hans">
+        <section>
+          <h2>一、引言</h2>
+          <p>欢迎使用 <strong>I Win</strong>。本隐私政策说明我们如何在 App 内收集、使用、存储、保护和披露你的信息，以及你可以如何管理这些信息。</p>
+          <p>本 App 的核心命盘计算、规则分析与 AI 推理在设备端完成。除 Apple App Store 内购、系统服务和你访问本网页时由网站托管服务产生的必要日志外，我们不会把你的出生信息、问题场景、历史记录上传到我们的服务器用于分析。</p>
+          <p>个人信息处理者或运营者：Guangzhou Yuezhi Information Technology Co., Ltd.</p>
+          <p>联系方式：<a href="mailto:lionlxz@gmail.com">lionlxz@gmail.com</a></p>
+        </section>
+
+        <section>
+          <h2>二、我们处理的信息</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>信息类别</th>
+                <th>具体内容</th>
+                <th>使用目的</th>
+                <th>存储位置</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>个人资料</td>
+                <td>性别、出生日期、日历类型、出生时辰或出生时辰精度、语言偏好、AI 模式偏好。</td>
+                <td>生成更贴合你的命盘结构、场景分析和界面语言体验。</td>
+                <td>存储在设备本地的 App 数据库。</td>
+              </tr>
+              <tr>
+                <td>分析输入</td>
+                <td>你选择或输入的问题场景、目的、状态、目标日期、目标方向。</td>
+                <td>用于完成财位、决策、出发等场景的本地推演与结果展示。</td>
+                <td>分析过程中在设备端使用；保存历史时会写入本地历史记录。</td>
+              </tr>
+              <tr>
+                <td>历史记录</td>
+                <td>场景类型、场景描述、分析时间、农历信息、评分、结果文本、输入日期、输入方向和规则结果数据。</td>
+                <td>便于你在 App 内查看历史分析结果。</td>
+                <td>存储在设备本地的 App 数据库。</td>
+              </tr>
+              <tr>
+                <td>免费体验次数</td>
+                <td>已使用的免费分析次数。</td>
+                <td>用于执行免费体验次数限制，并减少通过卸载重装反复获取免费次数的行为。</td>
+                <td>存储在系统 Keychain。Keychain 数据可能在卸载 App 后继续保留，具体取决于 iOS 的系统行为。</td>
+              </tr>
+              <tr>
+                <td>购买与订阅凭证</td>
+                <td>App Store 产品 ID、交易 ID、原始交易 ID、购买日期、过期日期、撤销日期、经 Apple 验证的交易表示数据。</td>
+                <td>用于判断 VIP 订阅或终身买断权益、恢复购买、离线校验短期权益状态。</td>
+                <td>StoreKit 交易由 Apple 处理；本 App 会将必要的权益凭证安全存储在系统 Keychain。</td>
+              </tr>
+              <tr>
+                <td>设备方向数据</td>
+                <td>磁力计或指南针方向读数。</td>
+                <td>用于 App 内与方向相关的展示和分析。</td>
+                <td>实时在设备端使用，不保存为定位记录，不上传到我们的服务器。</td>
+              </tr>
+              <tr>
+                <td>网页访问日志</td>
+                <td>当你访问本隐私政策网页时，网站托管服务可能处理 IP 地址、浏览器信息、访问时间等基础日志。</td>
+                <td>用于提供网页访问、安全防护、故障排查。</td>
+                <td>由你部署本页面所使用的网站托管服务处理。</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>三、我们如何使用信息</h2>
+          <ul>
+            <li>提供命盘计算、传统术数结构化分析、AI 推理和结果展示。</li>
+            <li>保存和展示你的历史分析结果。</li>
+            <li>执行免费体验次数、VIP 订阅和终身买断权益。</li>
+            <li>根据系统语言或你的设置显示简体中文、繁体中文或英文界面。</li>
+            <li>排查 App 运行、购买恢复或权益识别相关问题。</li>
+            <li>遵守法律法规、App Store 审核和交易处理要求。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>四、本地推理与不上传说明</h2>
+          <p>I Win 的核心规则引擎和 AI 推理在设备端运行。出生信息、问题场景、历史记录不会上传到我们的服务器用于分析，也不会出售给第三方。</p>
+          <p>如果未来版本新增云端同步、账号系统、在线 AI 服务、广告、统计分析或其他网络服务，我们会在上线前更新本政策，并在需要时重新征得你的同意。</p>
+        </section>
+
+        <section>
+          <h2>五、第三方服务</h2>
+          <h3>Apple App Store 与 StoreKit</h3>
+          <p>订阅、终身买断、退款、订阅管理和恢复购买由 Apple App Store 和 StoreKit 处理。Apple 可能根据其隐私政策处理 Apple ID、付款、税务、交易和设备相关信息。本 App 只读取完成权益判断所需的 StoreKit 交易状态和凭证。</p>
+          <h3>系统与开源组件</h3>
+          <p>App 使用 iOS 系统能力和本地运行的模型/推理组件。除 App Store 购买流程和你主动访问网页外，这些组件不会把你的分析资料上传给我们用于分析。</p>
+          <h3>广告与追踪</h3>
+          <p>当前版本不接入第三方广告 SDK，不进行跨 App 或跨网站追踪，不出售个人信息。</p>
+        </section>
+
+        <section>
+          <h2>六、权限说明</h2>
+          <p>当前版本不会在你同意隐私政策前进入主功能流程，也不会在同意前请求非必要权限。</p>
+          <p>如使用方向相关功能，App 可能读取设备指南针或磁力计方向数据。该数据用于当前功能展示，不会作为定位轨迹保存，也不会上传到我们的服务器。</p>
+        </section>
+
+        <section>
+          <h2>七、数据存储与保留</h2>
+          <ul>
+            <li>个人资料和历史记录保存在你的设备本地，直到你在 App 内删除、卸载 App 或系统清理数据。</li>
+            <li>免费体验次数和购买权益凭证保存在系统 Keychain，可能在卸载 App 后继续保留，用于防止滥用免费次数和帮助恢复权益状态。</li>
+            <li>如果 Apple StoreKit 返回的订阅或购买状态失效、过期或被撤销，App 会根据校验结果更新本地权益状态。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>八、你的权利与选择</h2>
+          <ul>
+            <li>你可以在 App 内查看或修改出生信息、语言和 AI 模式。</li>
+            <li>你可以在历史记录页面删除单条或全部历史记录，具体以 App 当前提供的功能为准。</li>
+            <li>你可以通过 iOS 系统设置卸载 App 或管理 App 数据。</li>
+            <li>你可以在 App Store 账户设置中管理或取消订阅。</li>
+            <li>如需访问、更正、删除你的相关个人信息，或撤回同意、咨询隐私问题，请通过本政策列明的联系方式联系我们。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>九、未成年人</h2>
+          <p>本 App 面向具备独立判断能力的用户，不专门面向儿童。未成年人使用本 App 前，应取得父母或其他监护人的同意。若你是监护人，并认为未成年人在未经同意的情况下使用了本 App 或提供了信息，请联系我们处理。</p>
+        </section>
+
+        <section>
+          <h2>十、安全措施</h2>
+          <p>我们采取与当前 App 形态相匹配的安全措施，包括本地数据库存储、系统 Keychain 保存敏感权益凭证、尽量减少数据传输和数据处理范围。请理解，任何系统或存储方式都无法保证绝对安全。</p>
+        </section>
+
+        <section>
+          <h2>十一、免责声明</h2>
+          <p>I Win 的内容基于传统文化元素、结构化算法和设备端 AI 推理生成，仅供娱乐、个人记录和一般参考，不构成投资、金融、医疗、法律、心理、职业或其他专业建议。</p>
+          <p>你应结合现实信息、专业判断和自身情况做出重要决定。因你依赖 App 输出内容而采取行动产生的结果，由你自行承担相应责任，法律另有规定的除外。</p>
+        </section>
+
+        <section>
+          <h2>十二、本政策的更新</h2>
+          <p>我们可能因功能变化、法律法规或 App Store 要求更新本政策。重大变更会通过 App 内提示、弹窗或本页面更新等方式告知你。更新后的政策自页面载明的生效日期起生效。</p>
+        </section>
+
+        <section>
+          <h2>十三、联系我们</h2>
+          <p>如你对本隐私政策或个人信息处理有任何问题，请联系：</p>
+          <p>运营者：Guangzhou Yuezhi Information Technology Co., Ltd.</p>
+          <p>邮箱：<a href="mailto:lionlxz@gmail.com">lionlxz@gmail.com</a></p>
+        </section>
+      </article>
+
+      <article class="policy" data-lang="zh-Hant">
+        <section>
+          <h2>一、引言</h2>
+          <p>歡迎使用 <strong>I Win</strong>。本隱私政策說明我們如何在 App 內收集、使用、儲存、保護和披露你的資訊，以及你可以如何管理這些資訊。</p>
+          <p>本 App 的核心命盤計算、規則分析與 AI 推理在設備端完成。除 Apple App Store 內購、系統服務和你訪問本網頁時由網站託管服務產生的必要日誌外，我們不會把你的出生資訊、問題場景、歷史記錄上傳到我們的伺服器用於分析。</p>
+          <p>個人資訊處理者或營運者：Guangzhou Yuezhi Information Technology Co., Ltd.</p>
+          <p>聯絡方式：<a href="mailto:lionlxz@gmail.com">lionlxz@gmail.com</a></p>
+        </section>
+
+        <section>
+          <h2>二、我們處理的資訊</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>資訊類別</th>
+                <th>具體內容</th>
+                <th>使用目的</th>
+                <th>儲存位置</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>個人資料</td>
+                <td>性別、出生日期、曆法類型、出生時辰或出生時辰精度、語言偏好、AI 模式偏好。</td>
+                <td>生成更貼合你的命盤結構、場景分析和介面語言體驗。</td>
+                <td>儲存在設備本地的 App 資料庫。</td>
+              </tr>
+              <tr>
+                <td>分析輸入</td>
+                <td>你選擇或輸入的問題場景、目的、狀態、目標日期、目標方向。</td>
+                <td>用於完成財位、決策、出發等場景的本地推演與結果展示。</td>
+                <td>分析過程中在設備端使用；保存歷史時會寫入本地歷史記錄。</td>
+              </tr>
+              <tr>
+                <td>歷史記錄</td>
+                <td>場景類型、場景描述、分析時間、農曆資訊、評分、結果文本、輸入日期、輸入方向和規則結果資料。</td>
+                <td>便於你在 App 內查看歷史分析結果。</td>
+                <td>儲存在設備本地的 App 資料庫。</td>
+              </tr>
+              <tr>
+                <td>免費體驗次數</td>
+                <td>已使用的免費分析次數。</td>
+                <td>用於執行免費體驗次數限制，並減少透過卸載重裝反覆取得免費次數的行為。</td>
+                <td>儲存在系統 Keychain。Keychain 資料可能在卸載 App 後繼續保留，具體取決於 iOS 的系統行為。</td>
+              </tr>
+              <tr>
+                <td>購買與訂閱憑證</td>
+                <td>App Store 產品 ID、交易 ID、原始交易 ID、購買日期、過期日期、撤銷日期、經 Apple 驗證的交易表示資料。</td>
+                <td>用於判斷 VIP 訂閱或終身買斷權益、恢復購買、離線校驗短期權益狀態。</td>
+                <td>StoreKit 交易由 Apple 處理；本 App 會將必要的權益憑證安全儲存在系統 Keychain。</td>
+              </tr>
+              <tr>
+                <td>設備方向資料</td>
+                <td>磁力計或指南針方向讀數。</td>
+                <td>用於 App 內與方向相關的展示和分析。</td>
+                <td>即時在設備端使用，不保存為定位記錄，不上傳到我們的伺服器。</td>
+              </tr>
+              <tr>
+                <td>網頁訪問日誌</td>
+                <td>當你訪問本隱私政策網頁時，網站託管服務可能處理 IP 地址、瀏覽器資訊、訪問時間等基礎日誌。</td>
+                <td>用於提供網頁訪問、安全防護、故障排查。</td>
+                <td>由你部署本頁面所使用的網站託管服務處理。</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>三、我們如何使用資訊</h2>
+          <ul>
+            <li>提供命盤計算、傳統術數結構化分析、AI 推理和結果展示。</li>
+            <li>保存和展示你的歷史分析結果。</li>
+            <li>執行免費體驗次數、VIP 訂閱和終身買斷權益。</li>
+            <li>根據系統語言或你的設定顯示簡體中文、繁體中文或英文介面。</li>
+            <li>排查 App 運行、購買恢復或權益識別相關問題。</li>
+            <li>遵守法律法規、App Store 審核和交易處理要求。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>四、本地推理與不上傳說明</h2>
+          <p>I Win 的核心規則引擎和 AI 推理在設備端運行。出生資訊、問題場景、歷史記錄不會上傳到我們的伺服器用於分析，也不會出售給第三方。</p>
+          <p>如果未來版本新增雲端同步、帳號系統、線上 AI 服務、廣告、統計分析或其他網路服務，我們會在上線前更新本政策，並在需要時重新取得你的同意。</p>
+        </section>
+
+        <section>
+          <h2>五、第三方服務</h2>
+          <h3>Apple App Store 與 StoreKit</h3>
+          <p>訂閱、終身買斷、退款、訂閱管理和恢復購買由 Apple App Store 和 StoreKit 處理。Apple 可能根據其隱私政策處理 Apple ID、付款、稅務、交易和設備相關資訊。本 App 只讀取完成權益判斷所需的 StoreKit 交易狀態和憑證。</p>
+          <h3>系統與開源元件</h3>
+          <p>App 使用 iOS 系統能力和本地運行的模型/推理元件。除 App Store 購買流程和你主動訪問網頁外，這些元件不會把你的分析資料上傳給我們用於分析。</p>
+          <h3>廣告與追蹤</h3>
+          <p>目前版本不接入第三方廣告 SDK，不進行跨 App 或跨網站追蹤，不出售個人資訊。</p>
+        </section>
+
+        <section>
+          <h2>六、權限說明</h2>
+          <p>目前版本不會在你同意隱私政策前進入主功能流程，也不會在同意前請求非必要權限。</p>
+          <p>如使用方向相關功能，App 可能讀取設備指南針或磁力計方向資料。該資料用於目前功能展示，不會作為定位軌跡保存，也不會上傳到我們的伺服器。</p>
+        </section>
+
+        <section>
+          <h2>七、資料儲存與保留</h2>
+          <ul>
+            <li>個人資料和歷史記錄保存在你的設備本地，直到你在 App 內刪除、卸載 App 或系統清理資料。</li>
+            <li>免費體驗次數和購買權益憑證保存在系統 Keychain，可能在卸載 App 後繼續保留，用於防止濫用免費次數和幫助恢復權益狀態。</li>
+            <li>如果 Apple StoreKit 返回的訂閱或購買狀態失效、過期或被撤銷，App 會根據校驗結果更新本地權益狀態。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>八、你的權利與選擇</h2>
+          <ul>
+            <li>你可以在 App 內查看或修改出生資訊、語言和 AI 模式。</li>
+            <li>你可以在歷史記錄頁面刪除單條或全部歷史記錄，具體以 App 目前提供的功能為準。</li>
+            <li>你可以透過 iOS 系統設定卸載 App 或管理 App 資料。</li>
+            <li>你可以在 App Store 帳戶設定中管理或取消訂閱。</li>
+            <li>如需訪問、更正、刪除你的相關個人資訊，或撤回同意、諮詢隱私問題，請透過本政策列明的聯絡方式聯絡我們。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>九、未成年人</h2>
+          <p>本 App 面向具備獨立判斷能力的用戶，不專門面向兒童。未成年人使用本 App 前，應取得父母或其他監護人的同意。若你是監護人，並認為未成年人在未經同意的情況下使用了本 App 或提供了資訊，請聯絡我們處理。</p>
+        </section>
+
+        <section>
+          <h2>十、安全措施</h2>
+          <p>我們採取與目前 App 形態相匹配的安全措施，包括本地資料庫儲存、系統 Keychain 保存敏感權益憑證、盡量減少資料傳輸和資料處理範圍。請理解，任何系統或儲存方式都無法保證絕對安全。</p>
+        </section>
+
+        <section>
+          <h2>十一、免責聲明</h2>
+          <p>I Win 的內容基於傳統文化元素、結構化算法和設備端 AI 推理生成，僅供娛樂、個人記錄和一般參考，不構成投資、金融、醫療、法律、心理、職業或其他專業建議。</p>
+          <p>你應結合現實資訊、專業判斷和自身情況做出重要決定。因你依賴 App 輸出內容而採取行動產生的結果，由你自行承擔相應責任，法律另有規定的除外。</p>
+        </section>
+
+        <section>
+          <h2>十二、本政策的更新</h2>
+          <p>我們可能因功能變化、法律法規或 App Store 要求更新本政策。重大變更會透過 App 內提示、彈窗或本頁面更新等方式告知你。更新後的政策自頁面載明的生效日期起生效。</p>
+        </section>
+
+        <section>
+          <h2>十三、聯絡我們</h2>
+          <p>如你對本隱私政策或個人資訊處理有任何問題，請聯絡：</p>
+          <p>營運者：Guangzhou Yuezhi Information Technology Co., Ltd.</p>
+          <p>電郵：<a href="mailto:lionlxz@gmail.com">lionlxz@gmail.com</a></p>
+        </section>
+      </article>
+
+      <article class="policy" data-lang="en">
+        <section>
+          <h2>1. Introduction</h2>
+          <p>Welcome to <strong>I Win</strong>. This Privacy Policy explains how we collect, use, store, protect, and disclose information in the app, and how you can manage that information.</p>
+          <p>The app's core chart calculation, rule-based analysis, and AI reasoning run on your device. Except for Apple App Store in-app purchases, system services, and necessary logs generated by the hosting service when you visit this web page, we do not upload your birth details, scene context, or history records to our servers for analysis.</p>
+          <p>Personal information processor or operator: Guangzhou Yuezhi Information Technology Co., Ltd.</p>
+          <p>Contact: <a href="mailto:lionlxz@gmail.com">lionlxz@gmail.com</a></p>
+        </section>
+
+        <section>
+          <h2>2. Information We Process</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Details</th>
+                <th>Purpose</th>
+                <th>Storage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Profile information</td>
+                <td>Gender, birth date, calendar type, birth Shi Chen or birth-hour precision, language preference, and AI mode preference.</td>
+                <td>To generate chart structures, scene analysis, and a language experience that fits your settings.</td>
+                <td>Stored in the app's local database on your device.</td>
+              </tr>
+              <tr>
+                <td>Analysis input</td>
+                <td>Scene, purpose, status or mood, target date, and target direction selected or entered by you.</td>
+                <td>To provide on-device reasoning and result display for wealth-position, decision, and departure scenarios.</td>
+                <td>Used on device during analysis; saved to local history only when you save or the app records a result.</td>
+              </tr>
+              <tr>
+                <td>History records</td>
+                <td>Scene type, scene detail, analysis time, lunar information, rating, result text, input date, input direction, and rule-result data.</td>
+                <td>To let you review past analysis results in the app.</td>
+                <td>Stored in the app's local database on your device.</td>
+              </tr>
+              <tr>
+                <td>Free-use count</td>
+                <td>The number of free analyses already used.</td>
+                <td>To enforce the free-use limit and reduce repeated free-use abuse through uninstalling and reinstalling the app.</td>
+                <td>Stored in the system Keychain. Keychain data may remain after app uninstall depending on iOS behavior.</td>
+              </tr>
+              <tr>
+                <td>Purchase and subscription credentials</td>
+                <td>App Store product ID, transaction ID, original transaction ID, purchase date, expiration date, revocation date, and Apple-verified transaction representation.</td>
+                <td>To determine VIP subscription or lifetime access, restore purchases, and perform short-term offline entitlement checks.</td>
+                <td>StoreKit transactions are processed by Apple. The app stores necessary entitlement credentials securely in the system Keychain.</td>
+              </tr>
+              <tr>
+                <td>Device direction data</td>
+                <td>Magnetometer or compass heading readings.</td>
+                <td>To support direction-related display and analysis inside the app.</td>
+                <td>Used in real time on device. It is not stored as a location trail and is not uploaded to our servers.</td>
+              </tr>
+              <tr>
+                <td>Web access logs</td>
+                <td>When you visit this Privacy Policy page, the website hosting service may process IP address, browser information, access time, and basic logs.</td>
+                <td>To provide web access, security protection, and troubleshooting.</td>
+                <td>Processed by the hosting service you use to deploy this page.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>3. How We Use Information</h2>
+          <ul>
+            <li>To provide chart calculation, structured traditional metaphysics analysis, AI reasoning, and result display.</li>
+            <li>To save and display your history records.</li>
+            <li>To enforce free-use limits, VIP subscriptions, and lifetime access.</li>
+            <li>To show the app in Simplified Chinese, Traditional Chinese, or English based on your system language or in-app setting.</li>
+            <li>To troubleshoot app operation, purchase restoration, or entitlement recognition issues.</li>
+            <li>To comply with applicable laws, App Store review requirements, and transaction-processing requirements.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. On-Device Reasoning and No Upload for Analysis</h2>
+          <p>I Win's core rule engine and AI reasoning run on your device. Birth details, scene context, and history records are not uploaded to our servers for analysis and are not sold to third parties.</p>
+          <p>If a future version adds cloud sync, accounts, online AI services, advertising, analytics, or other network services, we will update this policy before release and request consent again where required.</p>
+        </section>
+
+        <section>
+          <h2>5. Third-Party Services</h2>
+          <h3>Apple App Store and StoreKit</h3>
+          <p>Subscriptions, lifetime purchases, refunds, subscription management, and purchase restoration are handled by Apple App Store and StoreKit. Apple may process Apple ID, payment, tax, transaction, and device-related information under Apple's privacy policy. The app reads only the StoreKit transaction status and credentials needed to determine entitlements.</p>
+          <h3>System and Open-Source Components</h3>
+          <p>The app uses iOS system capabilities and locally running model/reasoning components. Except for App Store purchase flows and your voluntary web-page access, these components do not upload your analysis data to us for analysis.</p>
+          <h3>Advertising and Tracking</h3>
+          <p>The current version does not integrate third-party advertising SDKs, does not track you across apps or websites, and does not sell personal information.</p>
+        </section>
+
+        <section>
+          <h2>6. Permissions</h2>
+          <p>The current version does not enter the main feature flow before you agree to the Privacy Policy and does not request unnecessary permissions before consent.</p>
+          <p>For direction-related features, the app may read compass or magnetometer direction data. This data is used for the current feature display, is not stored as a location trail, and is not uploaded to our servers.</p>
+        </section>
+
+        <section>
+          <h2>7. Storage and Retention</h2>
+          <ul>
+            <li>Profile information and history records are stored locally on your device until you delete them in the app, uninstall the app, or the system removes the data.</li>
+            <li>Free-use counts and purchase entitlement credentials are stored in the system Keychain and may remain after uninstall. This helps reduce free-use abuse and restore entitlement state.</li>
+            <li>If Apple StoreKit reports that a subscription or purchase is invalid, expired, or revoked, the app updates the local entitlement state according to the verification result.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>8. Your Rights and Choices</h2>
+          <ul>
+            <li>You can view or modify birth information, language, and AI mode in the app.</li>
+            <li>You can delete individual or all history records on the history page, depending on the features available in the current app version.</li>
+            <li>You can uninstall the app or manage app data through iOS settings.</li>
+            <li>You can manage or cancel subscriptions in your App Store account settings.</li>
+            <li>To access, correct, delete, or ask questions about your personal information, or to withdraw consent, contact us using the contact details in this policy.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>9. Minors</h2>
+          <p>The app is intended for users capable of making their own judgments and is not directed specifically to children. Minors should obtain consent from a parent or legal guardian before using the app. If you are a guardian and believe a minor used the app or provided information without consent, please contact us.</p>
+        </section>
+
+        <section>
+          <h2>10. Security Measures</h2>
+          <p>We use measures appropriate to the current app design, including local database storage, system Keychain storage for sensitive entitlement credentials, and minimizing data transfer and processing scope. Please understand that no system or storage method can guarantee absolute security.</p>
+        </section>
+
+        <section>
+          <h2>11. Disclaimer</h2>
+          <p>I Win generates content based on traditional cultural elements, structured algorithms, and on-device AI reasoning. The content is for entertainment, personal record keeping, and general reference only. It does not constitute investment, financial, medical, legal, psychological, career, or other professional advice.</p>
+          <p>You should make important decisions based on real-world information, professional judgment, and your own circumstances. Except where prohibited by law, you are responsible for the results of actions you take in reliance on app output.</p>
+        </section>
+
+        <section>
+          <h2>12. Updates to This Policy</h2>
+          <p>We may update this policy because of feature changes, legal requirements, or App Store requirements. Material changes will be notified through in-app prompts, popups, or updates to this page. The updated policy takes effect from the effective date shown on the page.</p>
+        </section>
+
+        <section>
+          <h2>13. Contact Us</h2>
+          <p>If you have questions about this Privacy Policy or our handling of personal information, please contact:</p>
+          <p>Operator: Guangzhou Yuezhi Information Technology Co., Ltd.</p>
+          <p>Email: <a href="mailto:lionlxz@gmail.com">lionlxz@gmail.com</a></p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p data-i18n="footer">© 2026 Guangzhou Yuezhi Information Technology Co., Ltd. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    const labels = {
+      "zh-Hans": {
+        htmlLang: "zh-Hans",
+        eyebrow: "隐私政策",
+        title: "I Win 用户隐私政策",
+        meta: "生效日期：2026 年 6 月 8 日 · 最近更新：2026 年 6 月 8 日",
+        footer: "© 2026 Guangzhou Yuezhi Information Technology Co., Ltd. 保留所有权利。"
+      },
+      "zh-Hant": {
+        htmlLang: "zh-Hant",
+        eyebrow: "隱私政策",
+        title: "I Win 用戶隱私政策",
+        meta: "生效日期：2026 年 6 月 8 日 · 最近更新：2026 年 6 月 8 日",
+        footer: "© 2026 Guangzhou Yuezhi Information Technology Co., Ltd. 保留所有權利。"
+      },
+      en: {
+        htmlLang: "en",
+        eyebrow: "Privacy Policy",
+        title: "I Win Privacy Policy",
+        meta: "Effective date: June 8, 2026 · Last updated: June 8, 2026",
+        footer: "© 2026 Guangzhou Yuezhi Information Technology Co., Ltd. All rights reserved."
+      }
+    };
+
+    function normalizeLanguage(value) {
+      if (!value) return null;
+      const lang = String(value).toLowerCase();
+      if (lang === "zh-hant" || lang.startsWith("zh-tw") || lang.startsWith("zh-hk") || lang.startsWith("zh-mo") || lang.includes("hant")) {
+        return "zh-Hant";
+      }
+      if (lang === "zh-hans" || lang.startsWith("zh-cn") || lang.startsWith("zh-sg") || lang.includes("hans") || lang === "zh") {
+        return "zh-Hans";
+      }
+      if (lang.startsWith("en")) {
+        return "en";
+      }
+      return null;
+    }
+
+    function detectLanguage() {
+      const hashLang = normalizeLanguage(location.hash.replace("#", ""));
+      if (hashLang) return hashLang;
+
+      const stored = normalizeLanguage(localStorage.getItem("privacy-policy-language"));
+      if (stored) return stored;
+
+      const languages = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+      for (const language of languages) {
+        const normalized = normalizeLanguage(language);
+        if (normalized) return normalized;
+      }
+      return "en";
+    }
+
+    function setLanguage(language, shouldStore = true) {
+      const normalized = labels[language] ? language : "en";
+      document.documentElement.lang = labels[normalized].htmlLang;
+
+      document.querySelectorAll("[data-i18n]").forEach((node) => {
+        const key = node.getAttribute("data-i18n");
+        node.textContent = labels[normalized][key] || "";
+      });
+
+      document.querySelectorAll(".policy").forEach((node) => {
+        node.classList.toggle("active", node.getAttribute("data-lang") === normalized);
+      });
+
+      document.querySelectorAll("[data-lang-button]").forEach((button) => {
+        button.setAttribute("aria-pressed", button.getAttribute("data-lang-button") === normalized ? "true" : "false");
+      });
+
+      if (shouldStore) {
+        localStorage.setItem("privacy-policy-language", normalized);
+      }
+    }
+
+    document.querySelectorAll("[data-lang-button]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const language = button.getAttribute("data-lang-button");
+        history.replaceState(null, "", "#" + language);
+        setLanguage(language);
+      });
+    });
+
+    window.addEventListener("hashchange", () => {
+      setLanguage(detectLanguage(), false);
+    });
+
+    setLanguage(detectLanguage(), false);
+  </script>
+</body>
+</html>
